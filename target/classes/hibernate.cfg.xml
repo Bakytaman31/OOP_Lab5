@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost/new</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+
+        <property name="current_session_context_class">thread</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="com.exanple.task.AirTicket"/>
+        <mapping class="com.exanple.task.ClassOfAirTickets"/>
+        <mapping class="com.exanple.task.Client"/>
+        <mapping class="com.exanple.task.Contract"/>
+        <mapping class="com.exanple.task.Country"/>
+        <mapping class="com.exanple.task.Events"/>
+        <mapping class="com.exanple.task.EventTickets"/>
+        <mapping class="com.exanple.task.Hotel"/>
+        <mapping class="com.exanple.task.HotelClass"/>
+        <mapping class="com.exanple.task.HotelRooms"/>
+        <mapping class="com.exanple.task.Order"/>
+        <mapping class="com.exanple.task.Post"/>
+        <mapping class="com.exanple.task.RoomCategory"/>
+        <mapping class="com.exanple.task.Staff"/>
+        <mapping class="com.exanple.task.Tour"/>
+        <mapping class="com.exanple.task.TourFlights"/>
+        <mapping class="com.exanple.task.Tourist"/>
+        <mapping class="com.exanple.task.TourProgram"/>
+        <mapping class="com.exanple.task.TourTasks"/>
+        <mapping class="com.exanple.task.TravelPackage"/>
+        <mapping class="com.exanple.task.TypeOfTour"/>
+
+
+    </session-factory>
+</hibernate-configuration>
